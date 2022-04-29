@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+Created by: Ioana
+Created on: April 27 2022
+Unit4-01-HTML-GuessMyNumber
+-->
+<html>
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="description" content="hot or cold indicator by my standards" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="Ioana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png"/>
+    <link rel="manifest" href="./fav_index/site.webmanifest"/>
+    
+    <!-- stylesheets (CSS and MDL) -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-teal.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    
+    <!-- browser tab title -->
+    <title>Hot or cold?</title>
+  </head>
+  <body>
+    
+    <!-- MDL + JS -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!-- MDL Header -->
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Unit4-02-HTML-ColdHot</span>
+        </div>
+      </header>
+    
+    <!-- webpage title -->
+    <h1>Hot or cold?</h1>
+    <br>
+    <div class="mar">
+
+      <!-- Image with numbers from 1 to 6 -->
+      <center><img src="./images/Hot-and-Cold.png" height="300px" width="auto"></center>
+
+      <!-- table to put text field next to text -->
+      <table>
+        <tr>
+          <td>
+            <p>Enter current temperature:</p>
+          </td>
+          <td>
+            
+            <!-- MDL Numeric Textfield for user's temperature input -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+                <label class="mdl-textfield__label" for="sample2">Degrees ...</label>
+                <span class="mdl-textfield__error">No no. Number please</span>
+              </div>
+            </form>
+          </td>
+        </tr>
+      </table>
+      
+      <!-- accent button with ripples -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="buttonClicked()">check</button>
+      <br>
+      <br>
+      
+      <!-- Displays answer when clicked -->
+      <div id="answer"></div>
+    </div>
+    <br>
+    <br>
+  </body>
+</html>
