@@ -45,8 +45,11 @@ Unit4-01-HTML-GuessMyNumber
     <br>
     <div class="mar">
 
-      <!-- Image with numbers from 1 to 6 -->
-      <center><img src="./images/Hot-and-Cold.png" height="300px" width="auto"></center>
+      <!-- Image with thermometer and custom ms paint image -->
+      <center>
+        <img src="./images/Hot-and-Cold.png" height="300px" width="auto">
+        <img src="./images/goggy.png" height="200px" width="auto">
+      </center>
 
       <!-- table to put text field next to text -->
       <table>
@@ -59,15 +62,20 @@ Unit4-01-HTML-GuessMyNumber
             <!-- MDL Numeric Textfield for user's temperature input -->
             <form action="#">
               <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
-                <label class="mdl-textfield__label" for="sample2">Degrees ...</label>
+                <input 
+                  class="mdl-textfield__input" 
+                  type="text" pattern="-?[0-9]*(\.[0-9]+)?" 
+                  id="temp"
+                  step="any">
+                <label class="mdl-textfield__label" for="temp">Degrees ...</label>
                 <span class="mdl-textfield__error">No no. Number please</span>
               </div>
             </form>
           </td>
         </tr>
       </table>
-      
+      <br>
+        
       <!-- accent button with ripples -->
       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="buttonClicked()">check</button>
       <br>
